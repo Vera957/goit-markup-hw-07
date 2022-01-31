@@ -15,53 +15,55 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:ital,wght@0,500;0,700;0,900;1,400&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./sass/main.css" />
+    <link rel="stylesheet" href="./sass/main.min.css" />
+        <link rel="stylesheet" href="./css/main.min.css" />
+
   </head>
 
   <body>
     <header class="header">
-      <div class="container">
-        <a href="./index.html" class="header-without-underlines"
-          ><span class="logo logo-optional-color">Web</span
-          ><span class="logo logo-black-color">Studio</span></a
+      <div class="header_container">
+        <a href="./index.html" class="logo_link no-lines-under-link"
+          ><span class="logo">Web</span
+          ><span class="logo logo-blacker">Studio</span></a
         >
-        <nav class="just-nav">
-          <ul class="nav no-dots-ul header-links no-margin">
-            <li class="item">
+        <nav class="header_nav">
+          <ul class="header_nav_list no-dots-ul">
+            <li class="header_nav_list_item">
               <a
-                class="nav-link no-lines-under-link active-link"
+                class="header_nav_link no-lines-under-link active-link"
                 href="./index.html"
                 >Студия</a
               >
             </li>
-            <li class="item">
-              <a class="nav-link no-lines-under-link" href="./portfolio.html"
+            <li class="header_nav_list_item">
+              <a class="header_nav_link no-lines-under-link" href="./portfolio.html"
                 >Портфолио</a
               >
             </li>
-            <li class="item">
-              <a class="nav-link no-lines-under-link" href="">Контакты</a>
+            <li class="header_nav_list_item">
+              <a class="header_nav_link no-lines-under-link" href="">Контакты</a>
             </li>
           </ul>
         </nav>
-        <ul class="no-dots-ul no-margin just-contacts">
-          <li class="item">
+        <ul class="no-dots-ul header_contacts">
+          <li class="header_contacts_item">
             <a
-              class="nav-contacts no-lines-under-link link-and-icon"
+              class="header_contacts_link nav-contacts no-lines-under-link link-and-icon"
               href="mailto:info@devstudio.com"
             >
-              <svg class="icon-envelope">
+              <svg class="header_icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
-          <li class="item">
+          <li class="header_contacts_item">
             <a
-              class="nav-contacts no-lines-under-link link-and-icon"
+              class="header_contacts_link nav-contacts no-lines-under-link link-and-icon"
               href="tel:+380961111111"
             >
-              <svg class="icon-phone">
+              <svg class="header_icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
               +38 096 111 11 11</a
