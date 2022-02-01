@@ -18,7 +18,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-.header_container, .advantages_container {
+.header_container, .advantages_container, .work_container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -91,6 +91,16 @@ body {
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.section_heading {
+  font-family: Roboto;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: calc(42/36);
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 /** @format */
@@ -114,7 +124,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-.header_container, .advantages_container {
+.header_container, .advantages_container, .work_container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -187,6 +197,16 @@ body {
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.section_heading {
+  font-family: Roboto;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: calc(42/36);
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .header_nav_link, .header_contacts_link {
@@ -332,7 +352,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-.header_container, .advantages_container {
+.header_container, .advantages_container, .work_container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -405,6 +425,16 @@ body {
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.section_heading {
+  font-family: Roboto;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: calc(42/36);
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .hero {
@@ -452,7 +482,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-.header_container, .advantages_container {
+.header_container, .advantages_container, .work_container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -525,6 +555,16 @@ body {
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.section_heading {
+  font-family: Roboto;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: calc(42/36);
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .advantages_container {
@@ -583,5 +623,15 @@ body {
   letter-spacing: 0.03em;
   text-align: left;
   color: #757575;
+}
+
+.work_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.work_list .work_item:not(:last-child) {
+  margin-right: 30px;
 }
 /*# sourceMappingURL=main.css.map */

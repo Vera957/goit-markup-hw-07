@@ -84,3 +84,13 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.section_heading {
+  font-family: Roboto;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: calc(42/36);
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 50px;
+}
