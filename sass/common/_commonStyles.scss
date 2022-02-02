@@ -33,14 +33,13 @@ body {
 }
 
 .main-font-style {
-  color: var(--main-text-color);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
 }
 .no-lines-under-link {
   text-decoration: none;
-  transition: box-shadow 250ms var(--time-graf);
+  transition: box-shadow 250ms $time-graf;
 }
 
 .no-dots-ul {
@@ -93,4 +92,24 @@ body {
   letter-spacing: 0.03em;
   text-align: center;
   margin-bottom: 50px;
+  margin-top: 0;
+}
+
+.social_link_round{
+  display: flex;
+  width: 44px;height: 44px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  fill: $main-text-color;
+  transition: background 250ms $time-graf;
+
+  &:hover, &:focus{
+    background-color: $optional-color;
+    fill: white;
+  }
+}
+
+.social_link_item:not(:last-child){
+  margin-right: 10px;
 }
