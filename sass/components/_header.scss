@@ -68,18 +68,11 @@
   padding-top: 25px;
   padding-bottom: 25px;
 }
-
-.logo {
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  color: $optional-color;
-}
-
-.logo-blacker {
-  color: black;
+.header_logo{
+  @extend %logo;
+  &.logo_blacker{
+    color:black;
+  }
 }
 
 .header_contacts_item {

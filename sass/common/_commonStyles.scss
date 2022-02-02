@@ -51,7 +51,7 @@ body {
 }
 
 .btn {
-  display: inline-block;
+  display: flex;
   background-color: $optional-color;
   color: $main-bg-color;
   font-family: inherit;
@@ -62,9 +62,11 @@ body {
   text-align: center;
   cursor: pointer;
   min-width: 200px;
-  padding: 10px 32px;
+  height: 50px;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  align-items: center;
+  justify-content: center;
 }
 
 .no-margin {
@@ -111,4 +113,13 @@ body {
 
 .social_link_item:not(:last-child){
   margin-right: 10px;
+}
+
+%logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: $optional-color;
 }
