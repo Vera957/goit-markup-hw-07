@@ -50,3 +50,7 @@
     margin-bottom: 30px;
 }
 
+.team_social_link_round{
+  @extend %social_link_round;
+  fill: #AFB1B8;
+}
