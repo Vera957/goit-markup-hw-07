@@ -17,6 +17,10 @@
   padding-top: 200px;
   padding-bottom: 200px;
   font-family: Roboto;
+
+  &>.btn{
+    margin-right: auto;margin-left: auto;
+  }
 }
 
 .hero-heading {
