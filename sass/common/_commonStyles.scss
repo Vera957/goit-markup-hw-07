@@ -17,6 +17,20 @@ body {
   letter-spacing: 0.03em;
 }
 
+ul{
+  list-style: none;
+  padding: 0;margin: 0;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+  margin: 0;
+}
+
 %container {
   width: 1200px;
   padding-left: 15px;
@@ -32,25 +46,21 @@ body {
   padding-right: 0;
 }
 
-.main-font-style {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-}
-.no-lines-under-link {
+
+%no-lines-under-link {
   text-decoration: none;
   transition: box-shadow 250ms $time-graf;
 }
 
-.no-dots-ul {
+%no-dots-ul {
   list-style: none;
 }
-.no-cursive {
+%no-cursive {
   font-style: normal;
   margin-top: 20px;
 }
 
-.btn {
+%btn {
   display: flex;
   background-color: $optional-color;
   color: $main-bg-color;
@@ -69,11 +79,8 @@ body {
   justify-content: center;
 }
 
-.no-margin {
-  margin: 0;
-}
 
-.visually-hidden {
+%visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -86,7 +93,7 @@ body {
   overflow: hidden;
 }
 
-.section_heading {
+.section__heading {
   font-family: Roboto;
   font-size: 36px;
   font-weight: 700;
@@ -103,7 +110,7 @@ body {
   border-radius: 50%;
   align-items: center;
   justify-content: center;
-  transition: background 250ms $time-graf;
+  transition: background 250ms $time-graf, fill 250ms $time-graf;
 
   &:hover, &:focus{
     background-color: $optional-color;
@@ -111,7 +118,7 @@ body {
   }
 }
 
-.social_link_item:not(:last-child){
+.team__link:not(:last-child){
   margin-right: 10px;
 }
 
@@ -123,3 +130,5 @@ body {
   letter-spacing: 0.03em;
   color: $optional-color;
 }
+
+

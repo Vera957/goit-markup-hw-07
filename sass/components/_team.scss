@@ -1,28 +1,28 @@
 /** @format */
 
-.team_container {
+.team__container {
   @extend %container;
 }
 
-.team_section_bg {
+.section--team {
   background-color: $second-bg-color;
 }
 
-.team_list {
+.team__list {
   display: flex;
 
-  .team_item {
-      background-color: #fff;
+  .team__member {
+    background-color: #fff;
     box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024,
       0px 1px 3px 0px #0000001f;
   }
 
-  .team_item:not(:last-child) {
+  .team__member:not(:last-child) {
     margin-right: 30px;
   }
 }
 
-.team_member_heading {
+.team__heading {
   font-size: 16px;
   font-weight: 500;
   line-height: calc(19 / 16);
@@ -33,7 +33,7 @@
   margin-bottom: 10px;
 }
 
-.team_member_discription {
+.team__discription {
   font-size: 16px;
   line-height: calc(19 / 16);
   letter-spacing: 0.03em;
@@ -43,14 +43,22 @@
   margin-bottom: 16px;
 }
 
-.team_member_social-links{
-    display: flex;
-    padding: 0;
-    justify-content: center;
-    margin-bottom: 30px;
+.team__linkList {
+  display: flex;
+  padding: 0;
+  justify-content: center;
+  margin-bottom: 30px;
 }
 
-.team_social_link_round{
-  @extend %social_link_round;
-  fill: #AFB1B8;
+.team__socialLink:not(:last-child){
+  margin-right: 10px;
 }
+
+.team__link{
+  fill: rgba(175, 177, 184, 1);
+  @extend %social_link_round;
+
+}
+
+
+

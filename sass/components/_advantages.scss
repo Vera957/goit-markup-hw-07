@@ -2,16 +2,20 @@
 
 @import "../common/commonStyles";
 
-.advantages_container {
+.advantages__container {
   @extend %container;
+}
+
+.section--paddingBottom__kill{
   padding-bottom: 0;
 }
-.advantage_icon {
+
+.advantage__svg {
   width: 70px;
   height: 70px;
 }
 
-.advantage_icon_container {
+.advantage__icon {
   width: 270px;
   height: 120px;
   display: flex;
@@ -21,7 +25,7 @@
   margin-bottom: 30px;
 }
 
-.advantage_heading {
+.advantage__heading {
   font-family: Roboto;
   font-size: 14px;
   font-weight: 700;
@@ -30,21 +34,24 @@
   text-align: left;
   margin-bottom: 10px;
 }
-.advantage_list {
+.advantage__list {
   display: flex;
   padding-left: 0;
 }
 
-.advantage_list_item {
+.advantage__item {
   width: 270px;
   &:not(:last-child) {
     margin-right: 30px;
   }
 }
-.advantage_discription {
+.advantage__discription {
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   text-align: left;
   color: $main-text-color;
+}
+.advantage--visually-hidden{
+  @extend %visually-hidden;
 }
